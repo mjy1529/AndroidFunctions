@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beacon_dialog_border"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp">
+
+    <TextView
+        android:id="@+id/beacon_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="자동전시알림"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beacon_dialog_title"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="새로운 전시품이 발견되었습니다."
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/beacon_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/message"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/namsan1" />
+
+    <TextView
+        android:id="@+id/beacon_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/beacon_image"
+        android:background="#b11e1e1e"
+        android:gravity="center"
+        android:text="남산골 한옥마을"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/positiveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/beacon_title"
+        android:gravity="center"
+        android:text="상세보기"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/positiveBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/negativeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close_button"
+            android:backgroundTint="#515151" />
+
+    </LinearLayout>
+
+</RelativeLayout>
