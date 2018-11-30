@@ -3,6 +3,7 @@ package com.test.autobluetooth;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if(btService.getDeviceState()) {
+        if (btService.getDeviceState()) {
             btService.enableBluetooth();
         } else {
             finish();
