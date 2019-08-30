@@ -1,4 +1,4 @@
-package com.example.young.mediaplayer;
+package com.juyoung.mediaplayer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.young.mediaplayer", appContext.getPackageName());
+        assertEquals("com.juyoung.mediaplayer", appContext.getPackageName());
     }
 }

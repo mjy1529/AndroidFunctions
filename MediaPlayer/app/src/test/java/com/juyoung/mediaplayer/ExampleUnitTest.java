@@ -1,4 +1,4 @@
-package com.example.young.mediaplayer;
+package com.juyoung.mediaplayer;
 
 import org.junit.Test;
 
